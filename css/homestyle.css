@@ -177,3 +177,110 @@
      font-size: 2rem;
      font-weight: 200;
  }
+
+ /* --------------------------------------------------- */
+ /* SECTION - About */
+ /* --------------------------------------------------- */
+
+ .about-container {
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     background-color: #212529;
+ }
+
+ .abt-img {
+     width: 90%;
+     /* height: 100%; */
+ }
+
+ .about-title {
+     padding: 2rem 0;
+     color: var(--btn-typo);
+     font-size: 1.5rem;
+ }
+
+ .about-heading {
+     padding: 2rem 0;
+ }
+
+ .abt-heading {
+     color: var(--btn-typo);
+     font-size: 3rem;
+ }
+
+ .about-para {
+     color: var(--typo-dark-para);
+     padding: 3rem 0;
+ }
+
+ .abt-para-1 {
+     font-size: 1.3rem;
+ }
+
+ .abt-para-2 {
+     font-size: 1.4rem;
+     padding-top: 2rem;
+ }
+
+ .about-btn {
+     padding: 2rem 0;
+ }
+
+ .about-us-btn {
+     color: var(--btn-typo);
+     font-size: 1.5rem;
+     background-color: #615cfd;
+     border-radius: 5rem;
+     padding: 10px 20px;
+ }
+
+ /* --------------------------------------------------- */
+ /* SECTION - Featured Works*/
+ /* --------------------------------------------------- */
+
+ .featured-work {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     padding: 10rem 30rem;
+ }
+
+ .feature-title {
+     padding: 5rem 0;
+ }
+
+ .f-title {
+     color: var(--header-footer-bg);
+     font-size: 4.5rem;
+     font-weight: 400;
+ }
+
+ .feature-desc {
+     line-height: 2rem;
+ }
+
+ .f-desc {
+     text-align: center;
+     font-size: 1.5rem;
+     color: var(--typo-light-para);
+ }
+
+ .feature-grids {
+     padding: 5rem 0;
+ }
+
+ .grid-row-1 {
+     display: flex;
+     flex: 67% 33%;
+     gap: 3rem;
+
+ }
+
+ .grid-row-2 {
+     display: flex;
+     flex: 33.3% 33.3% 33.3%;
+     gap: 3rem;
+     padding-top: 2rem;
+ }
