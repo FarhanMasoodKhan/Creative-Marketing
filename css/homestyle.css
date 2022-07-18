@@ -18,6 +18,7 @@
      background-color: white;
  }
 
+
  .dark-mode {
      background-color: black;
      color: white;
@@ -41,7 +42,8 @@
      --typo-heading: #1f1f1f;
      --typo-dark-para: #c9c9c9;
      --typo-light-para: #212529;
-     --typo-light-para2: #707070 --btn-bg: #615cfd;
+     --typo-light-para2: #707070;
+     --btn-bg: #615cfd;
      --hover: #615cfd;
      --btn-typo: #fff;
      --heading-typo: #fff;
@@ -144,7 +146,7 @@
  .visit-btn {
      font-size: 2rem;
      color: #fff;
-     background-color: var(--btn-bg);
+     background-color: var(--hover);
      padding: 12px;
      border-radius: 3rem;
  }
@@ -357,7 +359,7 @@
  .w-btn {
      color: white;
      padding: 20px;
-     font-size: 2rem;
+     font-size: 1.5rem;
      border-radius: 100%;
      background-color: var(--hover);
  }
@@ -373,4 +375,254 @@
  .work-img {
 
      border-radius: 20px;
+ }
+
+
+ /* --------------------------------------------------- */
+ /* SECTION - Our team*/
+ /* --------------------------------------------------- */
+
+ .team-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     padding: 10rem;
+ }
+
+ .team-title,
+ .t-title {
+     padding: 2rem;
+     font-size: 2.5rem;
+     font-weight: 300;
+     color: #212529;
+ }
+
+ .team-para {
+     padding: 3rem;
+     font-size: 1.5rem;
+     font-weight: 300;
+     color: var(--typo-light-para2);
+     text-align: center;
+ }
+
+ .teams-row {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: row;
+     gap: 3rem;
+     padding-top: 5rem;
+ }
+
+ .team-person {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     padding: 10px 0;
+     gap: 10px;
+ }
+
+ .team-person-title {
+     font-size: 1.8rem;
+ }
+
+ .team-person-field {
+     font-size: 1.3rem;
+ }
+
+ /* --------------------------------------------------- */
+ /* SECTION - Slider Text*/
+ /* --------------------------------------------------- */
+
+ /* Slideshow container */
+ .slideshow-container {
+     background: url(/assets/img/asset\ 18.png);
+     height: 100vh;
+     width: 100%;
+     background-repeat: no-repeat;
+     /* background-size: cover; */
+ }
+
+ /* Slides */
+ .mySlides {
+     padding: 30rem 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     font-size: 2.3rem;
+     color: #fff;
+ }
+
+ .author-image {
+     padding-top: 2rem;
+ }
+
+ .slider-author {
+     font-size: 1.3rem;
+ }
+
+ /* Next & previous buttons */
+ /* .prev,
+ .next {
+     cursor: pointer;
+     position: absolute;
+     top: 50%;
+     width: auto;
+     margin-top: -30px;
+     padding: 16px;
+     color: #888;
+     font-weight: bold;
+     font-size: 20px;
+     border-radius: 0 3px 3px 0;
+     user-select: none;
+ } */
+
+ /* Position the "next button" to the right */
+ /* .next {
+     position: absolute;
+     right: 0;
+     border-radius: 3px 0 0 3px;
+ } */
+
+ /* On hover, add a black background color with a little bit see-through */
+ /* .prev:hover,
+ .next:hover {
+     background-color: rgba(0, 0, 0, 0.8);
+     color: white;
+ } */
+
+
+
+
+ /* --------------------------------------------------- */
+ /* SECTION - Get in Touch Contact*/
+ /* --------------------------------------------------- */
+
+ .contact-section {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     padding: 8rem;
+ }
+
+
+ .contact-form-title {
+     font-size: 4rem;
+     font-weight: 300;
+     color: #212529;
+ }
+
+ .contact-form-desc {
+     font-size: 1.5rem;
+     text-align: center;
+     color: var(--typo-light-para2);
+     padding: 2rem 0;
+ }
+
+ .cp {
+     padding: 2rem 0rem;
+ }
+
+ .contact-name {
+     border: #707070 0.8px solid;
+     border-radius: 50px;
+     padding: 10px 80px;
+     text-align: start;
+ }
+
+ .contact-email {
+     border: #707070 0.8px solid;
+     border-radius: 50px;
+     padding: 10px 80px;
+     text-align: start;
+ }
+
+ .contact-sub {
+     border: #707070 0.8px solid;
+     border-radius: 50px;
+     padding: 10px 28rem;
+
+ }
+
+ .contact-msg {
+     border: #707070 0.8px solid;
+     border-radius: 50px;
+     padding: 80px 28rem;
+     text-align: start;
+ }
+
+ .send-msg-btn {
+     background: #615cfd;
+     padding: 15px 33rem;
+     border-radius: 20px;
+     color: #fff;
+     font-size: 1.4rem;
+ }
+
+
+ /* --------------------------------------------------- */
+ /* SECTION - Footer*/
+ /* --------------------------------------------------- */
+
+ .footer-container {
+     padding: 10rem 0;
+     background-color: #212529;
+ }
+
+ .footer-row {
+     padding: 3rem 0;
+ }
+
+ .footer-img {
+     width: 10rem;
+ }
+
+ .footer-list {
+     display: flex;
+     justify-content: start;
+     align-self: center;
+     padding-left: 7rem;
+     gap: 2rem;
+     font-size: 2rem;
+     color: #fff;
+ }
+
+ .footer-list:hover {
+     color: #615cfd;
+     transition: all 0.5s;
+ }
+
+ .fa-brands {
+     border: 0.6px solid var(--heading-typo);
+     padding: 1.5rem;
+     border-radius: 30px;
+     color: #fff;
+     font-size: small;
+ }
+
+ .fa-brands:hover {
+     cursor: pointer;
+     background-color: aliceblue;
+     color: #615cfd;
+     transition: all 0.5s;
+ }
+
+
+ .copyright {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: #fff;
+     font-size: 1.5rem;
+     padding-top: 2rem;
+     border-top: 0.4px solid;
+     border-color: #707070;
+ }
+
+ #colorlib {
+     color: #615cfd;
  }
