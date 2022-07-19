@@ -25,7 +25,7 @@ body {
 }
 
 .dark-btn {
-    background-color: #212529;
+    background-color: transparent;
     border: none;
     margin-right: 20px;
 }
@@ -75,17 +75,19 @@ header {
     height: 40rem;
     width: 100%;
     background-image: url(/assets/img/contact-header.jpg);
+    background-size: cover;
+    background-position: bottom;
+    padding: 3rem 15rem 1rem 1rem;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding-top: 2rem;
     position: relative;
 }
 
-
 header .navlogo {
     cursor: pointer;
-    margin: 0rem 10rem;
+    padding: 1rem 1rem 1rem 7rem;
 }
 
 
@@ -94,6 +96,7 @@ header .navlogo {
     justify-content: center;
     align-items: center;
     font-size: large;
+    font-weight: 600;
 }
 
 .navbar-list {
@@ -101,8 +104,8 @@ header .navlogo {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0rem 2rem;
-    color: #fff;
+    color: black;
+    /* font color navbar*/
     gap: 4.5rem;
 }
 
@@ -112,7 +115,7 @@ header .navlogo {
 
 .hello-btn {
     margin: 0 10rem;
-    color: #fff;
+    color: black;
     border-bottom: 2px solid #615cfd;
     padding-bottom: 3px;
 }
@@ -133,7 +136,21 @@ header .navlogo {
     align-items: center;
 }
 
-/*  */
+.mapsize {
+    width: 100rem;
+    height: 50rem;
+}
+
+/* contact form */
+
+
+
+
+
+
+
+
+
 
 
 
