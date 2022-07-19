@@ -49,47 +49,84 @@
     </div>
 
     <!--  Form -->
-
+    <div class="contact-title">
+      <p class="c-title">Get in Touch</p>
+    </div>
     <div class="contact-main-container">
-      <div class="contact-title">
-        <p class="c-title">Get in Touch</p>
-      </div>
-
       <div class="contact-form">
         <form action="#" method="post">
           <div class="form-container">
-            <div class="msg">
-              <input
-                class="enter-text"
-                type="text"
+            <div class="msg-row">
+              <textarea
+                class="enter-msg"
+                cols="80"
+                rows="7"
                 placeholder="Enter Message"
-              />
+                style="margin: 0; padding: 10px"
+              ></textarea>
             </div>
 
-            <div class="name">
-              <input class="enter-text" type="text" placeholder="Enter Name" />
+            <div class="name-email-row">
+              <div class="name">
+                <input
+                  class="enter-name"
+                  type="text"
+                  placeholder="Enter Name"
+                  style="margin: 0; padding: 1.5rem 7rem 1.5rem 2rem"
+                />
+              </div>
+              <div class="email">
+                <input
+                  class="enter-email"
+                  type="text"
+                  placeholder="Enter Email"
+                  style="margin: 0; padding: 1.5rem 7rem 1.5rem 2rem"
+                />
+              </div>
             </div>
-            <div class="email">
-              <input class="enter-text" type="text" placeholder="Enter Email" />
-            </div>
-            <div class="subject">
+
+            <div class="subject-row">
               <input
-                class="enter-text"
+                class="enter-subject"
                 type="text"
                 placeholder="Enter Subject"
+                style="margin: 0; padding: 1.5rem 37rem 1.5rem 2rem"
               />
             </div>
           </div>
-          <div class="btn-container">
+          <!-- Form container -->
+
+          <div class="btn-row">
             <a class="send-btn" href="#">Send Message</a>
           </div>
         </form>
       </div>
+      <!-- contact form -->
 
       <div class="sidebar-form">
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="sidebar-section sidebar-address">
+          <i class="fa-solid fa-house-user"></i>
+          <div class="address-text">
+            <p class="text-up">Buttonwood, California.</p>
+            <p class="text-down">Rosemead, CA 91770</p>
+          </div>
+        </div>
+
+        <div class="sidebar-section sidebar-phone">
+          <i class="fa-solid fa-mobile-screen"></i>
+          <div class="num-text">
+            <p class="text-up">00 (440) 9865 562</p>
+            <p class="text-down">Mon to Fri 9am to 6pm</p>
+          </div>
+        </div>
+
+        <div class="sidebar-section sidebar-mail">
+          <i class="fa-solid fa-envelope"></i>
+          <div class="mail-text">
+            <p class="text-up">support@colorlib.com</p>
+            <p class="text-down">Send us your query anytime!</p>
+          </div>
+        </div>
       </div>
     </div>
     <!--  -->

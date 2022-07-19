@@ -141,17 +141,88 @@ header .navlogo {
     height: 50rem;
 }
 
-/* contact form */
 
 
+/* --------------------------------------------------- */
+/* SECTION - Contact form */
+/* --------------------------------------------------- */
+
+.contact-main-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 2rem 5rem 5rem 15rem;
+    gap: 5rem;
+}
+
+.contact-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 5rem 5rem 0rem 15rem;
+    gap: 5rem;
+
+}
+
+.c-title {
+    font-size: 3rem;
+    font-weight: 200;
+}
 
 
+.form-container {
+    display: unset;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
 
+.enter-msg {
+    padding: 5rem 10rem;
+    text-align: left;
+    border: 1px solid var(--typo-light-para2);
+}
 
+.name-email-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4rem;
+}
 
+.btn-row {
+    padding: 4rem 0;
+}
 
+.send-btn {
+    padding: 1.5rem 4rem;
+    border: #615cfd 1px solid;
+    font-size: medium;
+    color: #615cfd;
+}
 
+.sidebar-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0rem 5rem 25rem;
+    gap: 2rem;
+}
 
+.sidebar-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
+.sidebar-mail {
+    padding-left: 4rem;
+}
 
 
 /* --------------------------------------------------- */
