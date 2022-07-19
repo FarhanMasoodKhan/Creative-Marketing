@@ -25,7 +25,7 @@ body {
 }
 
 .dark-btn {
-    background-color: #212529;
+    background-color: transparent;
     border: none;
     margin-right: 20px;
 }
@@ -72,19 +72,22 @@ a {
 /* ------------------------- */
 
 header {
-    height: 9rem;
+    height: 40rem;
     width: 100%;
-    background-color: var(--header-footer-bg);
+    background-image: url(/assets/img/contact-header.jpg);
+    background-size: cover;
+    background-position: bottom;
+    padding: 2.5rem 15rem 0rem 0rem;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     position: relative;
 }
 
-
 header .navlogo {
     cursor: pointer;
-    margin: 3rem 10rem;
+    padding: 1rem 0rem 0rem 15rem;
 }
 
 
@@ -93,16 +96,17 @@ header .navlogo {
     justify-content: center;
     align-items: center;
     font-size: large;
-
+    font-weight: 600;
 }
 
 .navbar-list {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0rem 2rem;
-    color: #fff;
-    gap: 4.5rem;
+    color: var(--btn-typo);
+    /* font color navbar*/
+    gap: 4rem;
 }
 
 .navbar-list:hover {
@@ -111,7 +115,7 @@ header .navlogo {
 
 .hello-btn {
     margin: 0 10rem;
-    color: #fff;
+    color: var(--btn-typo);
     border-bottom: 2px solid #615cfd;
     padding-bottom: 3px;
 }
@@ -121,9 +125,20 @@ header .navlogo {
 }
 
 
+/* --------------------------------------------------- */
+/* SECTION - Main container */
+/* --------------------------------------------------- */
 
+.blog-section-padding {
+    padding: 10rem 0 10rem 0;
+}
 
-
+.blog-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10rem;
+}
 
 /* --------------------------------------------------- */
 /* SECTION - Footer*/
