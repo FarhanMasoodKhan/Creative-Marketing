@@ -15,36 +15,75 @@
     />
   </head>
   <body>
-    <!-- Header -->
-    <header class="header">
-      <!-- logo -->
-      <img class="navlogo" src="/assets/img/asset 0.webp" alt="logo" />
-      <!-- Navmenu -->
-      <nav class="navmain">
-        <ul class="navbar-list">
-          <li><a href="/index.html" class="navbar-list home-link">Home</a></li>
-          <li>
-            <a href="/services.html" class="navbar-list services-link"
-              >Services</a
-            >
-          </li>
-          <li>
-            <a href="/about.html" class="navbar-list about-link">About</a>
-          </li>
-          <li><a href="/blogs.html" class="navbar-list blog-link">Blog</a></li>
-          <li>
-            <a href="/contact.html" class="navbar-list contact-link">Contact</a>
-          </li>
-        </ul>
-        <!-- Hello Button-->
-        <li><a href="/contact.html" class="hello-btn">Say Hello</a></li>
-        <button class="dark-btn" onclick="myFunction()">
-          <img style="width: 40px" src="/assets/img/darkmode.png" alt="" />
-        </button>
-      </nav>
-    </header>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <!-- Nav Main container -->
+      <div class="nav-main-container">
+        <!-- logo -->
+        <div class="nav-logo-container">
+          <a href="/index.html" class="navlogo">
+            <img src="/assets/img/asset 0.webp" alt="logo"
+          /></a>
+        </div>
+        <!-- Nav list -->
+        <div class="nav-menu-container">
+          <ul class="navbar-list">
+            <li>
+              <a href="/index.html" class="navbar-list home-link">Home</a>
+            </li>
+            <li>
+              <a href="/services.html" class="navbar-list services-link"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="/about.html" class="navbar-list about-link">About</a>
+            </li>
+            <li>
+              <a href="/blogs.html" class="navbar-list blog-link">Blog</a>
+            </li>
+            <li>
+              <a href="/contact.html" class="navbar-list contact-link"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Nav Say Hello -->
+        <div class="nav-hello-container">
+          <a href="/contact.html" class="hello-btn">Say Hello</a>
+        </div>
+        <!-- Nav Dark Mode -->
+        <div class="nav-darkmode-container">
+          <button class="dark-btn" onclick="myFunction()">
+            <img style="width: 40px" src="/assets/img/darkmode.png" alt="" />
+          </button>
+        </div>
 
-    <!-- ------------------------- -->
+        <!-- Nav Mobile Navigation -->
+        <!-- <div></div> -->
+      </div>
+    </nav>
+
+    <!-- ------------------------ -->
+    <!-- Home Header Pic -->
+    <!-- ------------------------ -->
+
+    <section>
+      <div class="header-section">
+        <div class="header-text-box">
+          <div class="header-text">
+            <h1>Contact Us</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------->
+    <!---------- Map Section ------------>
+    <!-- -------------------------------->
+
+    <div class="Contact-conatiner">
 
     <div class="Map-container">
       <iframe
@@ -56,8 +95,9 @@
       ></iframe>
     </div>
     <!-- --------------------------- -->
-    <!--  Form -->
+    <!--  Form section          -->
     <!-- -------------------------------- -->
+    <div>
     <div class="contact-title">
       <p class="c-title">Get in Touch</p>
     </div>
@@ -110,65 +150,54 @@
           </div>
         </form>
       </div>
-      <!-- contact form -->
-
-      <div class="sidebar-form">
-        <div class="sidebar-section sidebar-address">
-          <i class="fa-solid fa-house-user"></i>
-          <div class="address-text">
-            <p class="text-up">Buttonwood, California.</p>
-            <p class="text-down">Rosemead, CA 91770</p>
-          </div>
-        </div>
-
-        <div class="sidebar-section sidebar-phone">
-          <i class="fa-solid fa-mobile-screen"></i>
-          <div class="num-text">
-            <p class="text-up">00 (440) 9865 562</p>
-            <p class="text-down">Mon to Fri 9am to 6pm</p>
-          </div>
-        </div>
-
-        <div class="sidebar-section sidebar-mail">
-          <i class="fa-solid fa-envelope"></i>
-          <div class="mail-text">
-            <p class="text-up">support@colorlib.com</p>
-            <p class="text-down">Send us your query anytime!</p>
-          </div>
-        </div>
-      </div>
     </div>
-    <!--  -->
+  </div>
+  </div>
+    <!-- contact form end  -->
 
     <!-- ------------------------ -->
     <!-- Footer Section -->
     <!-- ------------------------ -->
     <footer>
       <div class="footer-container">
-        <div class="footer-row">
-          <ul class="footer-list">
-            <li>
-              <img class="footer-img" src="/assets/img/asset 0.webp" alt="" />
-            </li>
-            <li><a class="footer-about footer-list" href="#">About</a></li>
-            <li>
-              <a class="footer-services footer-list" href="#">Services</a>
-            </li>
-            <li>
-              <a class="footer-Portfolio footer-list" href="#">Portfolio</a>
-            </li>
-            <li><a class="footer-Pages footer-list" href="#">Pages</a></li>
-            <li><a class="footer-Blog footer-list" href="#">Blog</a></li>
-            <li><a class="footer-Contact footer-list" href="#">Contact</a></li>
-            <ul class="footer-icons footer-list">
+        <div class="footer-row-1">
+          <h2 class="footer-title ">Contact Details</h2>
+            <ul class="footer-icons">
               <li><i class="fa-brands fa-facebook"></i></li>
               <li><i class="fa-brands fa-twitter"></i></li>
               <li><i class="fa-brands fa-instagram"></i></li>
               <li><i class="fa-brands fa-google-plus-g"></i></li>
-            </ul>
           </ul>
         </div>
-        <br /><br /><br />
+
+        <div class="footer-row-2">
+          <div class="sidebar-section sidebar-address">
+            <i class="fa-solid fa-house-user"></i>
+                <div class="address-text">
+                  <p class="text-up">Buttonwood, California.</p>
+                  <p class="text-down">Rosemead, CA 91770</p>
+                </div>
+          </div>
+
+          <div class="sidebar-section sidebar-phone">
+            <i class="fa-solid fa-mobile-screen"></i>
+              <div class="num-text">
+                <p class="text-up">00 (440) 9865 562</p>
+                <p class="text-down">Mon to Fri 9am to 6pm</p>
+              </div>
+          </div>
+
+          <div class="sidebar-section sidebar-mail">
+            <i class="fa-solid fa-envelope"></i>
+              <div class="mail-text">
+                <p class="text-up">support@colorlib.com</p>
+                <p class="text-down">Send us your query anytime!</p>
+              </div>
+          </div>
+        </div>
+  
+
+        <!--  -->
         <div class="copyright">
           <p>
             Copyright ©2022 All rights reserved | This template is made with by
@@ -176,6 +205,8 @@
           </p>
         </div>
       </div>
+
+    </div>
     </footer>
 
     <!-- -------------------------------------------------- -->

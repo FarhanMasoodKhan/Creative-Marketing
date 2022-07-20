@@ -22,15 +22,17 @@
  .dark-mode {
      background-color: #051630;
      color: white;
-     --header-footer-bg: #212529;
-     --typo-heading: #fff;
-     --typo-dark-para: #c9c9c9;
-     --typo-light-para: #c9c9c9;
-     --typo-light-para2: #c9c9c9;
+     /* --header-footer-bg: #212529;
+     --heading-text-dark: #fff;
+     --heading-text-light: #fff;
+     --para-text-light: #212529;
+     --para-light-medium: #707070;
+     --para-text-dark: #c9c9c9;
      --btn-bg: #615cfd;
-     --hover: #615cfd;
-     --btn-typo: #fff;
-     --heading-typo: #fff;
+     --btn-hover: #615cfd;
+     --btn-text: #fff;
+     --box-border-light: #c9c9c9;
+     --box-border-Cform: #c9c9c9; */
  }
 
 
@@ -49,14 +51,16 @@
 
  :root {
      --header-footer-bg: #212529;
-     --typo-heading: #1f1f1f;
-     --typo-dark-para: #c9c9c9;
-     --typo-light-para: #212529;
-     --typo-light-para2: #707070;
+     --heading-text-dark: #1f1f1f;
+     --heading-text-light: #fff;
+     --para-text-light: #c9c9c9;
+     --para-light-medium: #707070;
+     --para-text-dark: #212529;
      --btn-bg: #615cfd;
-     --hover: #615cfd;
-     --btn-typo: #fff;
-     --heading-typo: #1f1f1f;
+     --btn-hover: #615cfd;
+     --btn-text: #fff;
+     --box-border-light: #c9c9c9;
+     --box-border-Cform: #7070707a;
  }
 
  h1,
@@ -77,7 +81,7 @@
 
 
  /* -------------------------- */
- /* Header */
+ /*  NAVBAR Section */
  /* ------------------------- */
 
  .navbar {
@@ -112,12 +116,12 @@
  .navbar-list {
      display: flex;
      padding: 0 3rem;
-     color: #fff;
+     color: var(--heading-text-light);
  }
 
  .navbar-list:hover {
      transition: all 0.9s linear;
-     color: var(--hover);
+     color: var(--btn-hover);
  }
 
  .nav-hello-container {
@@ -125,8 +129,8 @@
  }
 
  .hello-btn {
-     color: #fff;
-     border-bottom: 2.5px solid #615cfd;
+     color: var(--heading-text-light);
+     border-bottom: 2.5px solid var(--btn-bg);
      padding-bottom: 3px;
  }
 
@@ -140,32 +144,51 @@
 
 
  /* --------------------------------------------------- */
- /* SECTION - INTRO */
+ /* Header Section */
  /* --------------------------------------------------- */
  .header-section {
      background-image: url(/assets/img/asset15.png);
      position: relative;
      height: 100vh;
+     background-repeat: no-repeat;
+     padding: 20rem 10rem;
+     background-size: cover;
+     background-position: bottom;
+     z-index: 0;
  }
+
+ .header-section::before {
+     position: absolute;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     background: var(--header-footer-bg);
+     opacity: .5;
+     z-index: -1;
+     content: '';
+ }
+
+ .header-text {
+     color: var(--heading-text-light);
+     font-size: 4rem;
+     font-weight: 400;
+     letter-spacing: 3px;
+ }
+
 
  .header-text-box {
      display: flex;
      justify-content: center;
      align-items: flex-start;
      flex-direction: column;
-     padding: 20rem 10rem;
      gap: 5rem;
- }
-
- .header-text {
-     color: #fff;
-     font-size: 4rem;
  }
 
  .visit-btn {
      font-size: 2rem;
-     color: #fff;
-     background-color: var(--hover);
+     color: var(--btn-text);
+     background-color: var(--btn-bg);
      padding: 12px;
      border-radius: 3rem;
  }
@@ -183,16 +206,17 @@
      justify-content: center;
      align-items: center;
      flex-direction: column;
+     letter-spacing: 2px;
      gap: 2rem;
  }
 
  .title {
-     color: #615cfd;
+     color: var(--btn-bg);
      font-size: 2rem;
  }
 
  .desc {
-     color: var(--typo-light-para);
+     color: var(--para-text-dark);
      font-size: 4rem;
      text-align: center;
  }
@@ -212,7 +236,7 @@
      text-align: center;
      flex-direction: column;
      gap: 2rem;
-     border: #c9c9c9 0.6px solid;
+     border: var(--box-border-light) 0.6px solid;
      padding: 8rem;
  }
 
@@ -229,12 +253,7 @@
      display: flex;
      justify-content: flex-start;
      align-items: center;
-     background-color: #212529;
- }
-
-
- .about-img-section {
-     background-color: unset;
+     background-color: var(--header-footer-bg);
  }
 
  .abt-img {
@@ -243,8 +262,8 @@
 
  .about-title {
      padding: 2rem 0;
-     color: var(--btn-typo);
-     font-size: 1.5rem;
+     color: var(--heading-text-light);
+     font-size: 2rem;
  }
 
  .about-heading {
@@ -252,12 +271,12 @@
  }
 
  .abt-heading {
-     color: var(--btn-typo);
+     color: var(--heading-text-light);
      font-size: 3rem;
  }
 
  .about-para {
-     color: var(--typo-dark-para);
+     color: var(--para-light-medium);
      padding: 3rem 0;
  }
 
@@ -275,7 +294,7 @@
  }
 
  .about-us-btn {
-     color: var(--btn-typo);
+     color: var(--btn-text);
      font-size: 1.5rem;
      background-color: #615cfd;
      border-radius: 5rem;
@@ -299,7 +318,7 @@
  }
 
  .f-title {
-     color: var(--typo-heading);
+     color: var(--heading-text-dark);
      font-size: 4.5rem;
      font-weight: 400;
  }
@@ -311,7 +330,7 @@
  .f-desc {
      text-align: center;
      font-size: 1.5rem;
-     color: var(--typo-light-para);
+     color: var(--heading-text-dark);
  }
 
  .feature-grids {
@@ -353,7 +372,7 @@
  }
 
  .w-title {
-     color: var(--typo-heading);
+     color: var(--heading-text-dark);
      font-weight: 400;
      font-size: 4rem;
  }
@@ -364,13 +383,13 @@
 
  .w-para-1 {
      padding: 2rem 0;
-     color: var(--typo-light-para);
+     color: var(--heading-text-dark);
      font-size: 1.5rem;
  }
 
  .w-para-2 {
      padding: 2rem 0;
-     color: var(--typo-light-para2);
+     color: var(--heading-text-dark);
      font-size: 1.3rem;
  }
 
@@ -382,11 +401,11 @@
  }
 
  .w-btn {
-     color: white;
+     color: var(--btn-text);
      padding: 20px;
      font-size: 1.5rem;
      border-radius: 100%;
-     background-color: var(--hover);
+     background-color: var(--btn-bg);
  }
 
  .watch-video {
@@ -420,14 +439,14 @@
      padding: 2rem;
      font-size: 2.5rem;
      font-weight: 300;
-     color: var(--heading-typo)
+     color: var(--heading-text-dark)
  }
 
  .team-para {
      padding: 3rem;
      font-size: 1.5rem;
      font-weight: 300;
-     color: var(--typo-light-para2);
+     color: var(--heading-text-dark);
      text-align: center;
  }
 
@@ -451,10 +470,12 @@
 
  .team-person-title {
      font-size: 1.8rem;
+     color: var(--heading-text-dark);
  }
 
  .team-person-field {
      font-size: 1.3rem;
+     color: var(--heading-text-dark);
  }
 
  /* --------------------------------------------------- */
@@ -464,11 +485,10 @@
  /* Slideshow container */
  .slideshow-container {
      background: url(/assets/img/asset\ 18.png);
-     height: 100vh;
+     height: 100%;
      width: 100%;
-     padding: 2rem 0;
      background-repeat: no-repeat;
-     /* background-size: cover; */
+     background-size: cover;
  }
 
  /* Slides */
@@ -479,7 +499,7 @@
      align-items: center;
      text-align: center;
      font-size: 2.3rem;
-     color: #fff;
+     color: var(--heading-text-light);
  }
 
  .author-image {
@@ -489,38 +509,6 @@
  .slider-author {
      font-size: 1.3rem;
  }
-
- /* Next & previous buttons */
- /* .prev,
- .next {
-     cursor: pointer;
-     position: absolute;
-     top: 50%;
-     width: auto;
-     margin-top: -30px;
-     padding: 16px;
-     color: #888;
-     font-weight: bold;
-     font-size: 20px;
-     border-radius: 0 3px 3px 0;
-     user-select: none;
- } */
-
- /* Position the "next button" to the right */
- /* .next {
-     position: absolute;
-     right: 0;
-     border-radius: 3px 0 0 3px;
- } */
-
- /* On hover, add a black background color with a little bit see-through */
- /* .prev:hover,
- .next:hover {
-     background-color: rgba(0, 0, 0, 0.8);
-     color: white;
- } */
-
-
 
 
  /* --------------------------------------------------- */
@@ -532,20 +520,21 @@
      justify-content: center;
      align-items: center;
      flex-direction: column;
-     padding: 5rem 0;
+     padding-bottom: 2rem;
+     padding-top: 7rem;
  }
 
 
  .contact-form-title {
      font-size: 4rem;
      font-weight: 300;
-     color: (var--typo-heading);
+     color: var(--heading-text-dark);
  }
 
  .contact-form-desc {
      font-size: 1.5rem;
      text-align: center;
-     color: var(--typo-light-para2);
+     color: var(--heading-text-dark);
      padding: 2rem 0;
  }
 
@@ -562,13 +551,13 @@
  }
 
  .contact-name {
-     border: #7070707a 0.1rem solid;
+     border: var(--box-border-Cform) 0.1rem solid;
      border-radius: 50px;
      padding: 1rem 5rem 1rem 2rem;
  }
 
  .contact-email {
-     border: #7070707a 0.1rem solid;
+     border: var(--box-border-Cform) 0.1rem solid;
      border-radius: 50px;
      padding: 1rem 5rem 1rem 2rem;
  }
@@ -580,7 +569,7 @@
  }
 
  .contact-sub {
-     border: #7070707a 0.1rem solid;
+     border: var(--box-border-Cform) 0.1rem solid;
      border-radius: 50px;
      padding: 1rem 35rem 1rem 2rem;
  }
@@ -592,7 +581,7 @@
  }
 
  .contact-msg {
-     border: #7070707a 0.1rem solid;
+     border: var(--box-border-Cform) 0.1rem solid;
      border-radius: 50px;
      padding: 2rem 35rem 15rem 4rem;
  }
@@ -618,7 +607,7 @@
 
  .footer-container {
      padding: 10rem 0;
-     background-color: #212529;
+     background-color: var(--header-footer-bg);
  }
 
  .footer-row {
@@ -636,7 +625,7 @@
      padding-left: 7rem;
      gap: 2rem;
      font-size: 2rem;
-     color: #fff;
+     color: var(--heading-text-light);
  }
 
  .footer-list:hover {
@@ -645,17 +634,17 @@
  }
 
  .fa-brands {
-     border: 0.6px solid var(--heading-typo);
+     border: 1px solid var(--heading-text-light);
      padding: 1.5rem;
      border-radius: 30px;
-     color: #fff;
+     color: var(--heading-text-light);
      font-size: small;
  }
 
  .fa-brands:hover {
      cursor: pointer;
-     background-color: aliceblue;
-     color: #615cfd;
+     background-color: var(--btn-hover);
+     color: var(--btn-text);
      transition: all 0.5s;
  }
 
@@ -664,7 +653,7 @@
      display: flex;
      justify-content: center;
      align-items: center;
-     color: #fff;
+     color: var(--heading-text-light);
      font-size: 1.5rem;
      padding-top: 2rem;
      border-top: 0.4px solid;
@@ -672,5 +661,5 @@
  }
 
  #colorlib {
-     color: #615cfd;
+     color: var(--btn-bg);
  }

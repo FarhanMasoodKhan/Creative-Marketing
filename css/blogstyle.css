@@ -50,6 +50,7 @@ body {
 
 
 :root {
+
     --header-footer-bg: #212529;
     --heading-text-dark: #1f1f1f;
     --heading-text-light: #fff;
@@ -59,6 +60,8 @@ body {
     --btn-bg: #615cfd;
     --btn-hover: #615cfd;
     --btn-text: #fff;
+    --box-border-light: #c9c9c9;
+    --box-border-Cform: #7070707a;
 }
 
 h1,
@@ -141,7 +144,7 @@ a {
 
 
 /* --------------------------------------------------- */
-/* SECTION - INTRO */
+/* SECTION - Header */
 /* --------------------------------------------------- */
 .header-section {
     background-image: url(/assets/img/contact-header.jpg);

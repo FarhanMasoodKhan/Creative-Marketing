@@ -15,36 +15,70 @@
     />
   </head>
   <body>
-    <!-- Header -->
-    <header class="header">
-      <!-- logo -->
-      <img class="navlogo" src="/assets/img/asset 0.webp" alt="logo" />
-      <!-- Navmenu -->
-      <nav class="navmain">
-        <ul class="navbar-list">
-          <li><a href="/index.html" class="navbar-list home-link">Home</a></li>
-          <li>
-            <a href="/services.html" class="navbar-list services-link"
-              >Services</a
-            >
-          </li>
-          <li>
-            <a href="/about.html" class="navbar-list about-link">About</a>
-          </li>
-          <li><a href="/blogs.html" class="navbar-list blog-link">Blog</a></li>
-          <li>
-            <a href="/contact.html" class="navbar-list contact-link">Contact</a>
-          </li>
-        </ul>
-        <!-- Hello Button-->
-        <li><a href="/contact.html" class="hello-btn">Say Hello</a></li>
-        <button class="dark-btn" onclick="myFunction()">
-          <img style="width: 40px" src="/assets/img/darkmode.png" alt="" />
-        </button>
-      </nav>
-    </header>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <!-- Nav Main container -->
+      <div class="nav-main-container">
+        <!-- logo -->
+        <div class="nav-logo-container">
+          <a href="/index.html" class="navlogo">
+            <img src="/assets/img/asset 0.webp" alt="logo"
+          /></a>
+        </div>
+        <!-- Nav list -->
+        <div class="nav-menu-container">
+          <ul class="navbar-list">
+            <li>
+              <a href="/index.html" class="navbar-list home-link">Home</a>
+            </li>
+            <li>
+              <a href="/services.html" class="navbar-list services-link"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="/about.html" class="navbar-list about-link">About</a>
+            </li>
+            <li>
+              <a href="/blogs.html" class="navbar-list blog-link">Blog</a>
+            </li>
+            <li>
+              <a href="/contact.html" class="navbar-list contact-link"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Nav Say Hello -->
+        <div class="nav-hello-container">
+          <a href="/contact.html" class="hello-btn">Say Hello</a>
+        </div>
+        <!-- Nav Dark Mode -->
+        <div class="nav-darkmode-container">
+          <button class="dark-btn" onclick="myFunction()">
+            <img style="width: 40px" src="/assets/img/darkmode.png" alt="" />
+          </button>
+        </div>
 
-    <!--  -->
+        <!-- Nav Mobile Navigation -->
+        <!-- <div></div> -->
+      </div>
+    </nav>
+
+    <!-- ------------------------ -->
+    <!-- Header Section -->
+    <!-- ------------------------ -->
+
+    <section>
+      <div class="header-section">
+        <div class="header-text-box">
+          <div class="header-text">
+            <h1>Our Services</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ------------------------ -->
     <!-- Home Service Section -->
     <!-- ------------------------ -->
@@ -99,7 +133,6 @@
         </div>
       </div>
     </section>
-    <!--  -->
 
     <!-- ------------------------ -->
     <!-- How We work Section -->
@@ -200,25 +233,23 @@
           </p>
         </div>
 
-        <form action="#" class="contact-form">
-          <div class="cp c-name-email">
+        <div class="contact-form">
+          <div class="c-padding c-name-email">
             <input class="contact-name" type="text" placeholder="Your name" />
             <input class="contact-email" type="text" placeholder="Email" />
           </div>
-          <div class="cp c-subject">
+          <div class="c-padding c-subject">
             <input class="contact-sub" type="text" placeholder="Subject" />
           </div>
-          <div class="cp c-msg">
-            <input class="contact-msg" type="text" placeholder="message" />
+          <div class="c-padding c-msg">
+            <input class="contact-msg" type="text" placeholder="Message" />
           </div>
-          <div class="cp c-send-btn">
+          <div class="c-padding c-send-btn">
             <a class="send-msg-btn" href="#">Send Message</a>
           </div>
-        </form>
+        </div>
       </div>
     </section>
-
-    <!--  -->
 
     <!-- ------------------------ -->
     <!-- Footer Section -->
@@ -259,7 +290,7 @@
     </footer>
 
     <!-- -------------------------------------------------- -->
-
+    <!-- <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script> -->
     <script src="/JS/index.js"></script>
   </body>
 </html>
