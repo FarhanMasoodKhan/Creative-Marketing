@@ -4,6 +4,30 @@ function myFunction() {
     element.classList.toggle("dark-mode");
   }
 
+// Navbar Scroll 
+
+// $(document).ready(function(){
+//   $(window).scroll(function(){
+//     if($(window).scrollTop()>300){
+//       $('nav-main-container').addClass('black');
+//     }
+//     else{
+//       $('nav-main-container').removeClass('black');
+//     }
+//   });
+// });
+
+// ---------------------------------------------------------------
+// function scrollFunction() {
+//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    
+//     document.getElementById("nav-main-container").style.background = "#501e27";
+//   } else {
+   
+//     document.getElementById("nav-main-container").style.background = "none";
+//   }
+// }
+
   // Slider Part
   var slideIndex = 1;
   showSlides(slideIndex);
