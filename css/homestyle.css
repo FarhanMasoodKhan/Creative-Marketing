@@ -22,7 +22,7 @@
  .dark-mode {
      background-color: #051630;
      color: white;
-     /* --header-footer-bg: #212529;
+     --header-footer-bg: #212529;
      --heading-text-dark: #fff;
      --heading-text-light: #fff;
      --para-text-light: #212529;
@@ -32,7 +32,7 @@
      --btn-hover: #615cfd;
      --btn-text: #fff;
      --box-border-light: #c9c9c9;
-     --box-border-Cform: #c9c9c9; */
+     --box-border-Cform: #c9c9c9;
  }
 
 
@@ -79,6 +79,19 @@
      text-decoration: none;
  }
 
+ ::-webkit-scrollbar {
+     width: 10px;
+     height: 20px;
+ }
+
+ ::-webkit-scrollbar-thumb {
+     background: linear-gradient(to bottom, #ff850a, #ff3474);
+     border-radius: 50px;
+ }
+
+ ::-webkit-scrollbar-track {
+     background: #474747;
+ }
 
  /* -------------------------- */
  /*  NAVBAR Section */
